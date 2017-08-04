@@ -1,6 +1,5 @@
 import {
-	SVG_NS,BALL_RADIUS
-
+	SVG_NS
 } 
 
 from '../settings';
@@ -43,7 +42,7 @@ export default class Game {
 			KEYS.down,
 		);
 
-		this.Ball = new Ball(BALL_RADIUS,width,height);
+		this.Ball = new Ball('8',this.width,this.height);
 
 	}
 
@@ -61,6 +60,7 @@ export default class Game {
 		this.board.render(svg);
 		this.player1.render(svg);
 		this.player2.render(svg);
+		this.Ball.render(svg);
 
 
 	}

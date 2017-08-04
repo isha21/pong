@@ -11,9 +11,9 @@ export default class Ball {
   render(svg) {
     const ball = document.createElementNS(SVG_NS, 'circle');
     ball.setAttributeNS(null, 'fill', 'white');
-    ball.setAttributeNS(null, 'cx', this.x);
-    ball.setAttributeNS(null, 'cy', this.y);
-    ball.setAttributeNS(null, 'r',this.radius);
+    ball.setAttributeNS(null, 'cx', this.boardWidth / 2);
+    ball.setAttributeNS(null, 'cy', this.boardHeight / 2);
+    ball.setAttributeNS(null, 'r', 8);
 
 
     svg.appendChild(ball);
