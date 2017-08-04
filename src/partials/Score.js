@@ -11,7 +11,7 @@ export default class Score {
 
   render(svg, score) {
     const text = document.createElementNS(SVG_NS, 'text');
-    text.setAttributeNS(null, 'fill', 'white');
+    text.setAttributeNS(null, 'fill', 'darkviolet');
     text.setAttributeNS(null, 'font-size', '40');
     text.setAttributeNS(null, 'x', this.x);
     text.setAttributeNS(null, 'y', this.y);
