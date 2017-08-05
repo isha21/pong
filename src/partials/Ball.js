@@ -100,7 +100,7 @@ export default class Ball {
     ball.setAttributeNS(null, 'fill', 'yellow');
     ball.setAttributeNS(null, 'cx', this.x);
     ball.setAttributeNS(null, 'cy', this.y);
-    ball.setAttributeNS(null, 'r', 8);
+    ball.setAttributeNS(null, 'r', 16);
 
 
 
