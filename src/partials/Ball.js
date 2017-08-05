@@ -9,7 +9,7 @@ export default class Ball {
     this.boardHeight = boardHeight;
     this.direction = 1;
     // this.advantage = 1;
-    this.ping = new Audio('public/sounds/pong-03.wav');
+    this.ping = new Audio('public/sounds/traffic_city 2.wav');
     this.reset();
   }
 
@@ -92,13 +92,11 @@ export default class Ball {
       this.vx = -this.vx;
 
     } else if (this.x <= 0) {
-      // this.advantage = 1;
-      this.goal(player2);
-      //this.x = this.x;
+      this.goal(player2);     
     }
 
 
-    const ball = document.createElementNS(SVG_NS, 'circle');
+    let ball = document.createElementNS(SVG_NS, 'circle');
     ball.setAttributeNS(null, 'fill', 'yellow');
     ball.setAttributeNS(null, 'cx', this.x);
     ball.setAttributeNS(null, 'cy', this.y);

@@ -52,9 +52,7 @@ export default class Paddle {
     paddle.setAttributeNS(null, 'fill', 'red');
     paddle.setAttributeNS(null, 'x', this.x);
     paddle.setAttributeNS(null, 'y', this.y);
-    // paddle.setAttributeNS(null, 'speed', this.speed);
-    // paddle.setAttributeNS(null, 'score', this.score);
-
+  
     svg.appendChild(paddle);
 
 
