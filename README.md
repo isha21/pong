@@ -1,27 +1,12 @@
 # Pong Game
 
-A basic pong game using SVGs.
+This is my third project at Red Academy making a pong game using JavaScript with ESnext.
 
-## Setup
+This was a really fun way of learning JavaScript.
 
-**Install dependencies:**
 
-`> npm i`
+Technologies used
 
-**Run locally with Webpack Dev Server:**
-
-`> npm start`
-
-**Build for production:**
-
-`> npm run build`
-
-## Keys
-
-**Player 1:**
-* a: up
-* z: down
-
-**Player 2:**
-* ▲ : up
-* ▼: down
+JavaScript with ESnext
+NPM 
+SVG's
