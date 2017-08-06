@@ -26,9 +26,9 @@ export default class Paddle {
     });
   }
 
-  coordinates(x, y,width, height) {
-  let leftX = x + height;
-  let rightX = x - height;
+  coordinates(x, y, width, height) {
+  let leftX = x;
+  let rightX = x + width;
   let topY = y;
   let bottomY = y + height;
   return [leftX, rightX, topY, bottomY];
@@ -47,8 +47,8 @@ export default class Paddle {
 
   render(svg) {
     let paddle = document.createElementNS(SVG_NS, 'rect');
-    paddle.setAttributeNS(null, 'height', '50');
-    paddle.setAttributeNS(null, 'width', '30');
+    paddle.setAttributeNS(null, 'height', this.height);
+    paddle.setAttributeNS(null, 'width', this.width);
     paddle.setAttributeNS(null, 'fill', 'red');
     paddle.setAttributeNS(null, 'x', this.x);
     paddle.setAttributeNS(null, 'y', this.y);
