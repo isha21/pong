@@ -20,8 +20,8 @@ export default class Game {
 
 		this.gameElement = document.getElementById(element);
 
-		this.paddleWidth = 8;
-		this.paddleHeight = 56;
+		this.paddleWidth = 19;
+		this.paddleHeight = 96;
 		this.boardGap = 10;
 
 
