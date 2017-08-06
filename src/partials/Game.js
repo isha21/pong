@@ -27,31 +27,24 @@ export default class Game {
 
 
 		this.board = new Board(this.width, this.height);
-		this.player1 = new Paddle(
-			this.height,
-			this.paddleWidth,
-			this.paddleHeight,
-			this.boardGap,
-			(this.height - this.paddleHeight) / 2,
+
+		this.player1 = new Paddle(this.height,this.paddleWidth,this.paddleHeight,	this.boardGap,(this.height - this.paddleHeight) / 2,
 			KEYS.a,
-			KEYS.z
+			KEYS.z,
 		);
 
-		this.player2 = new Paddle(
-			this.height,
-			this.paddleWidth,
-			this.paddleHeight,
-			this.width - this.boardGap - this.paddleWidth,
-			(this.height - this.paddleHeight) / 2,
+		this.player2 = new Paddle(this.height,	this.paddleWidth,this.paddleHeight,this.width - this.boardGap - this.paddleWidth,(this.height - this.paddleHeight) / 2,
 			KEYS.up,
 			KEYS.down,
 		);
 
-		this.Ball = new Ball(
-			this.ballRadius, 
-			this.width, 
-			this.height,
+	this.player3 = new Paddle(this.height,this.paddleWidth,this.paddleHeight,(this.width/2),(this.height - this.paddleHeight) / 4,
+			KEYS.o,
+			KEYS.i,
 		);
+
+
+		this.Ball = new Ball(this.ballRadius, this.width,this.height,);
 
 		this.Ball2 = new Ball(this.ballRadius,(this.width/4),this.height/2);
 		this.Ball3 = new Ball(this.ballRadius, (this.width-(this.width)/4),this.height-(this.height)/2);
@@ -88,6 +81,7 @@ export default class Game {
 		this.board.render(svg);
 		this.player1.render(svg);
 		this.player2.render(svg);
+		this.player3.render(svg);
 		this.Ball.render(svg, this.player1, this.player2);
 		this.Ball2.render(svg, this.player1, this.player2);
 		this.Ball3.render(svg, this.player1, this.player2);
