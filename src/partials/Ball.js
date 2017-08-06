@@ -8,7 +8,6 @@ export default class Ball {
     this.boardWidth = boardWidth;
     this.boardHeight = boardHeight;
     this.direction = 1;
-    // this.advantage = 1;
     this.ping = new Audio('public/sounds/traffic_city 2.wav');
     this.reset();
   }
@@ -87,7 +86,6 @@ export default class Ball {
     this.paddleCollision(player1, player2);
 
     if (this.x >= this.boardWidth) {
-      // this.advantage = -1;
       this.goal(player1);
       this.vx = -this.vx;
 
@@ -101,7 +99,7 @@ export default class Ball {
     ball.setAttributeNS(null, 'cx', this.x);
     ball.setAttributeNS(null, 'cy', this.y);
     ball.setAttributeNS(null, 'r', 16);
-
+    
 
 
     svg.appendChild(ball);
