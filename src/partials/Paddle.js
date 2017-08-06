@@ -20,7 +20,7 @@ export default class Paddle {
           break;
         case down:
           this.down();
-          break;
+
       }
 
     });
