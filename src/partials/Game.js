@@ -38,9 +38,14 @@ export default class Game {
 			KEYS.down,
 		);
 
-	this.player3 = new Paddle(this.height,this.paddleWidth,this.paddleHeight,(this.width/2),(this.height - this.paddleHeight) / 4,
+		this.player3 = new Paddle(this.height,this.paddleWidth,this.paddleHeight,(this.width/2),(this.height - this.paddleHeight) / 4,
 			KEYS.o,
 			KEYS.i,
+		);
+
+			this.player4 = new Paddle(this.height,this.paddleWidth,this.paddleHeight,	(this.width/2),(this.height - this.paddleHeight) / 4,
+			KEYS.a,
+			KEYS.z,
 		);
 
 
@@ -82,6 +87,7 @@ export default class Game {
 		this.player1.render(svg);
 		this.player2.render(svg);
 		this.player3.render(svg);
+		this.player4.render(svg);
 		this.Ball.render(svg, this.player1, this.player2);
 		this.Ball2.render(svg, this.player1, this.player2);
 		this.Ball3.render(svg, this.player1, this.player2);
