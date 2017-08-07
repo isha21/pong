@@ -49,10 +49,10 @@ export default class Game {
 		);
 
 
-		this.Ball = new Ball(this.ballRadius, this.width,this.height,);
+		this.ball = new Ball(this.ballRadius, this.width,this.height,);
 
-		this.Ball2 = new Ball(this.ballRadius,(this.width/4),this.height/2);
-		this.Ball3 = new Ball(this.ballRadius, (this.width-(this.width)/4),this.height-(this.height)/2);
+		this.ball2 = new Ball(this.ballRadius,(this.width/4),this.height/2);
+		this.ball3 = new Ball(this.ballRadius, (this.width-(this.width)/4),this.height-(this.height)/2);
 
 		this.score1 = new Score(this.width / 2 - 150, 30, 30);
 		this.score2 = new Score(this.width / 2 + 130, 30, 30);
@@ -88,11 +88,11 @@ export default class Game {
 		this.player2.render(svg);
 		this.player3.render(svg);
 		this.player4.render(svg);
-		this.Ball.render(svg, this.player1, this.player2);
-		this.Ball2.render(svg, this.player1, this.player2);
+		this.ball.render(svg, this.player1, this.player2);
+		this.ball2.render(svg, this.player1, this.player2);
+		this.ball3.render(svg, this.player3, this.player4);
 		this.score1.render(svg, this.player1.score);
-		this.score2.render(svg, this.player2.score);
-		this.Ball3.render(svg, this.player3, this.player4);
+		this.score2.render(svg, this.player2.score);	
 	}
 
 }
