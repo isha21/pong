@@ -73,6 +73,7 @@ export default class Game {
 		});
 	}
 
+
 	render() {
 		if (this.pause) {
 			return;
