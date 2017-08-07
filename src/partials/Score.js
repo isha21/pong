@@ -1,4 +1,6 @@
-import {SVG_NS} from '../settings';
+import {
+  SVG_NS
+} from '../settings';
 
 
 
@@ -15,11 +17,11 @@ export default class Score {
     text.setAttributeNS(null, 'font-size', '40');
     text.setAttributeNS(null, 'x', this.x);
     text.setAttributeNS(null, 'y', this.y);
-    text.setAttributeNS(null, 'font-family','Silkscreen Web');
+    text.setAttributeNS(null, 'font-family', 'Silkscreen Web');
     text.textContent = score;
 
     svg.appendChild(text);
 
 
   }
-} 
+}

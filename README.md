@@ -36,9 +36,9 @@ o: up
 i: down
 
 Player 4:
-▲ : up
-▼: down
-moves with player 2 this increases the level of difficulty
+a: up
+z: down
+moves with player 1 this increases the level of difficulty
 
 Balls: the game starts out with 3 yellow balls
 press g and a 4th green ball will appear

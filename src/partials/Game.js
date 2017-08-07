@@ -29,32 +29,32 @@ export default class Game {
 
 		this.board = new Board(this.width, this.height);
 
-		this.player1 = new Paddle(this.height,this.paddleWidth,this.paddleHeight,	this.boardGap,(this.height - this.paddleHeight) / 2,
+		this.player1 = new Paddle(this.height, this.paddleWidth, this.paddleHeight, this.boardGap, (this.height - this.paddleHeight) / 2,
 			KEYS.a,
 			KEYS.z,
 		);
 
-		this.player2 = new Paddle(this.height,	this.paddleWidth,this.paddleHeight,this.width - this.boardGap - this.paddleWidth,(this.height - this.paddleHeight) / 2,
+		this.player2 = new Paddle(this.height, this.paddleWidth, this.paddleHeight, this.width - this.boardGap - this.paddleWidth, (this.height - this.paddleHeight) / 2,
 			KEYS.up,
 			KEYS.down,
 		);
 
-		this.player3 = new Paddle(this.height,this.paddleWidth,this.paddleHeight,(this.width/2),(this.height - this.paddleHeight) / 4,
+		this.player3 = new Paddle(this.height, this.paddleWidth, this.paddleHeight, (this.width / 2), (this.height - this.paddleHeight) / 4,
 			KEYS.o,
 			KEYS.i,
 		);
 
-			this.player4 = new Paddle(this.height,this.paddleWidth,this.paddleHeight,	(this.width/2),(this.height - this.paddleHeight) / 4,
+		this.player4 = new Paddle(this.height, this.paddleWidth, this.paddleHeight, (this.width / 2), (this.height - this.paddleHeight) / 4,
 			KEYS.a,
 			KEYS.z,
 		);
 
 
-		this.ball = new Ball(this.ballRadius, this.width,this.height,);
+		this.ball = new Ball(this.ballRadius, this.width, this.height, );
 
-		this.ball2 = new Ball(this.ballRadius,(this.width/4),this.height/2);
-		this.ball3 = new Ball(this.ballRadius, (this.width-(this.width)/4),this.height-(this.height)/2);
-		this.greenBall = new Ball(this.ballRadius, (this.width-(this.width)/4),this.height-(this.height)/2);
+		this.ball2 = new Ball(this.ballRadius, (this.width / 4), this.height / 2);
+		this.ball3 = new Ball(this.ballRadius, (this.width - (this.width) / 4), this.height - (this.height) / 2);
+		this.greenBall = new Ball(this.ballRadius, (this.width - (this.width) / 4), this.height - (this.height) / 2);
 
 		this.score1 = new Score(this.width / 2 - 150, 30, 30);
 		this.score2 = new Score(this.width / 2 + 130, 30, 30);
@@ -66,7 +66,7 @@ export default class Game {
 				case KEYS.spaceBar:
 					this.pause = !this.pause;
 					break;
-			  case KEYS.g:
+				case KEYS.g:
 					this.greenBallExist = true;
 					break;
 			}
@@ -98,7 +98,7 @@ export default class Game {
 		this.ball2.render(svg, this.player1, this.player2);
 		this.ball3.render(svg, this.player3, this.player4);
 		this.score1.render(svg, this.player1.score);
-		this.score2.render(svg, this.player2.score);	
+		this.score2.render(svg, this.player2.score);
 		if (this.greenBallExist) {
 			this.greenBall.render(svg, this.player1, this.player2, 4);
 		}

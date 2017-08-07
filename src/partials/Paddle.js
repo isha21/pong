@@ -1,5 +1,6 @@
 import {
-  SVG_NS} from '../settings';
+  SVG_NS
+} from '../settings';
 
 export default class Paddle {
 
@@ -29,11 +30,11 @@ export default class Paddle {
   }
 
   coordinates(x, y, width, height) {
-  let leftX = x;
-  let rightX = x + width;
-  let topY = y;
-  let bottomY = y + height;
-  return [leftX, rightX, topY, bottomY];
+    let leftX = x;
+    let rightX = x + width;
+    let topY = y;
+    let bottomY = y + height;
+    return [leftX, rightX, topY, bottomY];
   }
 
   up() {
@@ -54,7 +55,7 @@ export default class Paddle {
     paddle.setAttributeNS(null, 'fill', 'red');
     paddle.setAttributeNS(null, 'x', this.x);
     paddle.setAttributeNS(null, 'y', this.y);
-  
+
     svg.appendChild(paddle);
-  }  
+  }
 }

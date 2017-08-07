@@ -69,7 +69,7 @@ export default class Ball {
         this.ping.play();
 
       }
-      
+
     }
   }
 
@@ -91,7 +91,7 @@ export default class Ball {
       this.vx = -this.vx;
 
     } else if (this.x <= 0) {
-      this.goal(player2);     
+      this.goal(player2);
     }
 
 
@@ -102,10 +102,10 @@ export default class Ball {
     ball.setAttributeNS(null, 'r', '16');
 
     if (greenBall) {
-    ball.setAttributeNS(null, 'fill', 'green');
-    ball.setAttributeNS(null, 'cx', this.x);
-    ball.setAttributeNS(null, 'cy', this.y);
-    ball.setAttributeNS(null, 'r', '16');    
+      ball.setAttributeNS(null, 'fill', 'green');
+      ball.setAttributeNS(null, 'cx', this.x);
+      ball.setAttributeNS(null, 'cy', this.y);
+      ball.setAttributeNS(null, 'r', '16');
     }
 
     svg.appendChild(ball);
