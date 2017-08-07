@@ -99,7 +99,7 @@ export default class Game {
 		this.score1.render(svg, this.player1.score);
 		this.score2.render(svg, this.player2.score);	
 		if (this.greenBallExist) {
-			this.greenBall.render(svg, this.player1, this.player2);
+			this.greenBall.render(svg, this.player1, this.player2, 4);
 		}
 	}
 
