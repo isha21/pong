@@ -12,6 +12,8 @@ export default class Paddle {
     this.speed = 10;
     this.score = 0;
 
+
+
     document.addEventListener('keydown', event => {
       switch (event.key) {
         case up:
@@ -54,9 +56,5 @@ export default class Paddle {
     paddle.setAttributeNS(null, 'y', this.y);
   
     svg.appendChild(paddle);
-
-
-
-  }
-
+  }  
 }
