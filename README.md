@@ -2,7 +2,7 @@
 
 This is my third project at Red Academy making a pong game using JavaScript with ESnext.
 
-This was a really fun way of improving my understanding of Javascript. Some of the features added extra balls and extra paddles were added to reinforce my understanding of the code that was written during class. The game starts out with 3 yellow balls and the special feature of this game is upon pressing the g key a 4th green ball will appear.
+This was a really fun way of improving my understanding of Javascript. Some of the features such as extra balls moving in different areas of the boards and extra paddles were to reinforce my understanding of the code that was written during class. The game starts out with 3 yellow balls and the main special feature of this game is upon pressing the g key a 4th green ball will appear.
 
 Technologies used
 
