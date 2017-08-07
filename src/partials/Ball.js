@@ -79,7 +79,7 @@ export default class Ball {
   }
 
 
-  render(svg, player1, player2) {
+  render(svg, player1, player2, greenBall) {
     this.x += this.vx;
     this.y += this.vy;
 
@@ -100,8 +100,13 @@ export default class Ball {
     ball.setAttributeNS(null, 'cx', this.x);
     ball.setAttributeNS(null, 'cy', this.y);
     ball.setAttributeNS(null, 'r', '16');
-    
 
+    if (greenBall) {
+    ball.setAttributeNS(null, 'fill', 'green');
+    ball.setAttributeNS(null, 'cx', this.x);
+    ball.setAttributeNS(null, 'cy', this.y);
+    ball.setAttributeNS(null, 'r', '16');    
+    }
 
     svg.appendChild(ball);
   }

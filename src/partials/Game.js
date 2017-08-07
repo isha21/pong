@@ -24,6 +24,7 @@ export default class Game {
 		this.paddleHeight = 96;
 		this.boardGap = 10;
 		this.ballRadius = 8;
+		this.greenBall = false;
 
 
 		this.board = new Board(this.width, this.height);
@@ -53,6 +54,7 @@ export default class Game {
 
 		this.ball2 = new Ball(this.ballRadius,(this.width/4),this.height/2);
 		this.ball3 = new Ball(this.ballRadius, (this.width-(this.width)/4),this.height-(this.height)/2);
+		this.ball4 = new Ball(this.ballRadius, (this.width-(this.width)/4),this.height-(this.height)/2);
 
 		this.score1 = new Score(this.width / 2 - 150, 30, 30);
 		this.score2 = new Score(this.width / 2 + 130, 30, 30);
@@ -63,6 +65,9 @@ export default class Game {
 			switch (event.key) {
 				case KEYS.spaceBar:
 					this.pause = !this.pause;
+					break;
+			  case KEYS.g:
+					this.greenBallExist = true;
 					break;
 			}
 		});
@@ -93,6 +98,9 @@ export default class Game {
 		this.ball3.render(svg, this.player3, this.player4);
 		this.score1.render(svg, this.player1.score);
 		this.score2.render(svg, this.player2.score);	
+		if (this.greenBallExist) {
+			this.ball4.render(svg, this.player1, this.player2);
+		}
 	}
 
 }

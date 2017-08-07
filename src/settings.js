@@ -9,5 +9,6 @@ export const KEYS = {
   spaceBar: ' ', 
   o: 'o',
   i: 'i',
+  g: 'g',
 
 }
