@@ -40,6 +40,7 @@ a: up
 z: down
 moves with player 1 this increases the level of difficulty
 
-Balls: the game starts out with 3 yellow balls
-press g and a 4th green ball will appear
+Balls: the game starts out with 2 yellow balls
+After a player reaches a score of 10 a new green ball will appear
+press the g key and another green ball will appear
 
