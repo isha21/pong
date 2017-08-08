@@ -96,11 +96,13 @@ export default class Game {
 		this.player4.render(svg);
 		this.ball.render(svg, this.player1, this.player2);
 		this.ball2.render(svg, this.player1, this.player2);
-		this.ball3.render(svg, this.player3, this.player4);
 		this.score1.render(svg, this.player1.score);
 		this.score2.render(svg, this.player2.score);
 		if (this.greenBallExist) {
 			this.greenBall.render(svg, this.player1, this.player2, 4);
+		}
+		if ((this.player1.score > 10) || (this.player2.score > 10)) {
+			this.ball3.render(svg, this.player3, this.player4);
 		}
 	}
 
