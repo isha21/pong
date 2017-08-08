@@ -83,6 +83,7 @@ export default class Ball {
     this.x += this.vx;
     this.y += this.vy;
 
+
     this.wallCollision();
     this.paddleCollision(player1, player2);
 
@@ -107,6 +108,13 @@ export default class Ball {
       ball.setAttributeNS(null, 'cy', this.y);
       ball.setAttributeNS(null, 'r', '16');
     }
+
+    // if (blueBall) {
+    //   ball.setAttributeNS(null, 'fill', 'blue');
+    //   ball.setAttributeNS(null, 'cx', this.x);
+    //   ball.setAttributeNS(null, 'cy', this.y);
+    //   ball.setAttributeNS(null, 'r', '16');
+    // }
 
     svg.appendChild(ball);
   }

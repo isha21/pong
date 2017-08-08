@@ -102,8 +102,7 @@ export default class Game {
 			this.greenBall.render(svg, this.player1, this.player2, 4);
 		}
 		if ((this.player1.score > 10) || (this.player2.score > 10)) {
-			this.ball3.render(svg, this.player3, this.player4);
+			this.ball3.render(svg, this.player3, this.player4, 3);
 		}
 	}
-
 }
