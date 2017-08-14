@@ -52,9 +52,9 @@ export default class Game {
 
 		this.ball = new Ball(this.ballRadius, this.width, this.height, );
 
-		this.ball2 = new Ball(this.ballRadius, (this.width / 4), this.height / 2);
+		// this.ball2 = new Ball(this.ballRadius, (this.width / 4), this.height / 2);
 		// this.ball3 = new Ball(this.ballRadius, (this.width - (this.width) / 4), this.height - (this.height) / 2);
-		this.greenBall = new Ball(this.ballRadius, this.width, this.height);
+		this.greenBall = new Ball((this.ballRadius-8), this.width, this.height, );
 
 		this.score1 = new Score(this.width / 2 - 150, 30, 30);
 		this.score2 = new Score(this.width / 2 + 130, 30, 30);
