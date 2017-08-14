@@ -8,7 +8,7 @@ export default class Ball {
     this.boardWidth = boardWidth;
     this.boardHeight = boardHeight;
     this.direction = 1;
-    this.ping = new Audio('public/sounds/traffic_city 2.wav');
+    this.ping = new Audio('public/sounds/traffic_city_2.wav');
     this.reset();
   }
 
