@@ -24,7 +24,7 @@ export default class Game {
 		this.paddleHeight = 96;
 		this.boardGap = 10;
 		this.ballRadius = 8;
-		this.greenBallExist = false;
+	
 
 
 		this.board = new Board(this.width, this.height);
@@ -39,10 +39,10 @@ export default class Game {
 			KEYS.down,
 		);
 
-		this.player3 = new Paddle(this.height, this.paddleWidth, this.paddleHeight, (this.width / 2), (this.height - this.paddleHeight) / 4,
-			KEYS.o,
-			KEYS.i,
-		);
+		// this.player3 = new Paddle(this.height, this.paddleWidth, this.paddleHeight, (this.width / 2), (this.height - this.paddleHeight) / 4,
+		// 	KEYS.o,
+		// 	KEYS.i,
+		// );
 
 		this.player4 = new Paddle(this.height, this.paddleWidth, this.paddleHeight, (this.width / 2), (this.height - this.paddleHeight) / 4,
 			KEYS.a,
@@ -66,9 +66,9 @@ export default class Game {
 				case KEYS.spaceBar:
 					this.pause = !this.pause;
 					break;
-				case KEYS.g:
-					this.greenBallExist = true;
-					break;
+				// case KEYS.g:
+				// 	this.greenBallExist = true;
+				// 	break;
 			}
 		});
 	}
@@ -92,8 +92,8 @@ export default class Game {
 		this.board.render(svg);
 		this.player1.render(svg);
 		this.player2.render(svg);
-		this.player3.render(svg);
-		this.player4.render(svg);
+		// this.player3.render(svg);
+		// this.player4.render(svg);
 		this.ball.render(svg, this.player1, this.player2);
 		this.ball2.render(svg, this.player1, this.player2);
 		this.score1.render(svg, this.player1.score);
@@ -102,7 +102,7 @@ export default class Game {
 			this.greenBall.render(svg, this.player1, this.player2, 4);
 		}
 		if ((this.player1.score > 10) || (this.player2.score > 10)) {
-			this.ball3.render(svg, this.player3, this.player4, 3);
+			this.ball3.render(svg, this.player1, this.player2, 3);
 		}
 	}
 }
