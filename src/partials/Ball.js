@@ -15,6 +15,7 @@ export default class Ball {
   reset() {
     this.x = this.boardWidth / 2;
     this.y = this.boardHeight / 2;
+    
 
     this.vy = 0;
 
@@ -100,7 +101,7 @@ export default class Ball {
     ball.setAttributeNS(null, 'fill', 'yellow');
     ball.setAttributeNS(null, 'cx', this.x);
     ball.setAttributeNS(null, 'cy', this.y);
-    ball.setAttributeNS(null, 'r', '16');
+    ball.setAttributeNS(null, 'r', this.radius);
 
     if (greenBall) {
       ball.setAttributeNS(null, 'fill', 'green');
