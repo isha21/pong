@@ -23,7 +23,7 @@ export default class Game {
 		this.paddleWidth = 19;
 		this.paddleHeight = 96;
 		this.boardGap = 10;
-		this.ballRadius = 7;
+		this.ballRadius = 8;
 	
 
 
