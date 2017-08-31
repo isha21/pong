@@ -78,17 +78,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 var SVG_NS = exports.SVG_NS = 'http://www.w3.org/2000/svg';
 
-var KEYS = exports.KEYS = {
-  a: 'a',
-  z: 'z',
-  up: 'ArrowUp',
-  down: 'ArrowDown',
-  spaceBar: ' ',
-  o: 'o',
-  i: 'i',
-  g: 'g'
-
-};
+var KEYS = exports.KEYS = { a: 'a', z: 'z', up: 'ArrowUp', down: 'ArrowDown', spaceBar: ' ', o: 'o' };
 
 /***/ }),
 /* 1 */
