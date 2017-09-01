@@ -1,13 +1,6 @@
-import {
-	SVG_NS
-}
-
-from '../settings';
+import {SVG_NS,KEYS} from '../settings';
 import Board from './Board';
 import Paddle from './Paddle';
-import {
-	KEYS
-} from '../settings';
 import Ball from './Ball';
 import Score from './Score';
 
